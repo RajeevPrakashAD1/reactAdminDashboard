@@ -1,8 +1,21 @@
 import React from 'react';
+
+
+// our pages imports
+
 import AddCategory from './views/MockTest/AddCategory';
 
+import ViewFaculty from './views/Faculty/viewFaculty';
+import AddFaculty from './views/Faculty/addFaculty';
+import AddPyqForm from './views/PYQ/addpyq';
 
 const ViewCategoryList = React.lazy(() => import('./views/MockTest/ViewCategoryList'));
+
+
+
+
+
+
 
 
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
@@ -31,7 +44,13 @@ const ButtonGroups = React.lazy(() => import('./views/buttons/button-groups/Butt
 const Buttons = React.lazy(() => import('./views/buttons/buttons/Buttons'));
 const Charts = React.lazy(() => import('./views/charts/Charts'));
 //const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
+
+// home page import
 const Starter = React.lazy(() => import('./views/Starter/Starter'));
+
+
+
+
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
 const Brands = React.lazy(() => import('./views/icons/brands/Brands'));
@@ -43,6 +62,11 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
+
+
+
+
+
 
 
 
@@ -58,6 +82,11 @@ const routes = [
 
 
 
+
+   {path:'/faculty/viewFacultyList', name:" All Faculty", component:ViewFaculty},
+   {path:'/faculty/addFaculty', name:" All Faculty", component:AddFaculty},
+   
+   {path:'/pyq/add-pyq', name:" Add PYQ", component:AddPyqForm},
 
 
 
